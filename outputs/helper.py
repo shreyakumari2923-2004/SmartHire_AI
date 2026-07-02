@@ -1,4 +1,3 @@
-import os
 import re
 import nltk
 import pandas as pd
@@ -12,7 +11,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 # NLTK setup
 # -----------------------------
 nltk.download("punkt")
-nltk.download("punkt_tab")
 nltk.download("stopwords")
 
 stop_words = set(stopwords.words("english"))
@@ -190,10 +188,8 @@ def generate_missing_skill_insight(missing_skills):
     """
     if len(missing_skills) == 0:
         return "No major skill gaps detected for this role."
-
     elif len(missing_skills) <= 3:
         return f"Candidate is missing a few important skills: {', '.join(missing_skills)}."
-
     else:
         top_missing = missing_skills[:5]
         return (
@@ -230,32 +226,20 @@ def rank_resumes(job_description, uploaded_files):
     - ranks candidates
     - returns final ranking dataframe
     """
-    # Clean JD
     cleaned_jd = clean_text(job_description)
-
-    # Extract JD skills
     jd_skills = extract_skills(job_description)
 
     candidate_data = []
 
     for file in uploaded_files:
-        # Read resume
         resume_text = read_text_file(file)
-
-        # Candidate name from uploaded file name
         candidate_name = file.name.replace(".txt", "")
-
-        # Clean resume
         cleaned_resume = clean_text(resume_text)
 
-        # Extract skills
         resume_skills = extract_skills(resume_text)
-
-        # Match and missing skills
         matched_skills = get_matched_skills(resume_skills, jd_skills)
         missing_skills = get_missing_skills(resume_skills, jd_skills)
 
-        # Skill scores
         skill_match_count = len(matched_skills)
         total_jd_skills = len(jd_skills)
 
@@ -264,21 +248,17 @@ def rank_resumes(job_description, uploaded_files):
         else:
             skill_match_percentage = (skill_match_count / total_jd_skills) * 100
 
-        # Similarity score
         similarity_score = calculate_resume_jd_similarity(
             cleaned_resume,
             cleaned_jd
         )
         similarity_percentage = similarity_score * 100
 
-        # Final score
         final_score = (0.6 * skill_match_percentage) + (0.4 * similarity_percentage)
         final_score = round(final_score, 2)
 
-        # Recommendation
         recommendation = get_recommendation_tag(final_score)
 
-        # Summary + note
         candidate_summary = generate_candidate_summary(
             candidate_name,
             final_score,
@@ -314,13 +294,11 @@ def rank_resumes(job_description, uploaded_files):
 
     ranking_df = pd.DataFrame(candidate_data)
 
-    # Sort by final score
     ranking_df = ranking_df.sort_values(
         by="final_score",
         ascending=False
     ).reset_index(drop=True)
 
-    # Add rank
     ranking_df["rank"] = ranking_df.index + 1
 
     return ranking_df
