@@ -76,30 +76,33 @@ SmartHire_AI/
     ├── similarity_chart.png
     └── top_3_candidates_chart.png
     # 📸 App Screenshots
+# 📸 App Screenshots
 
 ## 1. Home Page
-![Home Page](../images/home1.png)
+![Home Page](./images/home1.png)
 
 ---
 
 ## 2. Final Candidate Ranking
-![Final Candidate Ranking](../images/ranking.png)
+![Final Candidate Ranking](./images/ranking.png)
 
 ---
 
 ## 3. Candidate Performance Charts
-![Chart 1](../images/chart1.png)
+![Chart 1](./images/chart1.png)
 
-![Chart 2](../images/chart2.png)
+![Chart 2](./images/chart2.png)
 
-![Chart 3](../images/chart3.png)
+![Chart 3](./images/chart3.png)
 
 ---
 
 ## 4. Top 3 Shortlisted Candidates
-![Top 3 Shortlisted Candidates](../images/shortlist.png)
+![Top 3 Shortlisted Candidates](./images/shortlist.png)
 
 ---
 
 ## 5. Candidate Detailed Analysis
-![Detailed Candidate Analysis](../images/detailedanalysis.png)
+![Detailed Candidate Analysis](./images/detailedanalysis.png)
+
+
