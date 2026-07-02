@@ -1,6 +1,5 @@
 import os
 import streamlit as st
-import pandas as pd
 import matplotlib.pyplot as plt
 
 from helper import rank_resumes
@@ -31,9 +30,8 @@ st.markdown("---")
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))   # outputs/
 PROJECT_ROOT = os.path.dirname(BASE_DIR)                # SmartHire_AI/
 SAMPLE_DIR = os.path.join(PROJECT_ROOT, "data", "sample_resume")
-
 SAMPLE_JD_PATH = os.path.join(SAMPLE_DIR, "job_description.txt")
-OUTPUT_DIR = BASE_DIR   # outputs folder itself
+OUTPUT_DIR = BASE_DIR
 
 # ---------------------------------------------------
 # Session state for Job Description
@@ -66,7 +64,6 @@ job_description = st.text_area(
     placeholder="Example: Looking for a Data Analyst with Python, SQL, Excel, Tableau, Machine Learning..."
 )
 
-# Keep session state updated if user edits text manually
 st.session_state.job_description = job_description
 
 st.markdown("---")
@@ -97,43 +94,35 @@ if st.button("🚀 Analyze Resumes"):
 
     try:
         # ---------------------------------------------------
-        # Save uploaded resumes temporarily inside outputs/temp_resumes
+        # Analyze resumes using helper.py
         # ---------------------------------------------------
-        temp_resume_dir = os.path.join(OUTPUT_DIR, "temp_uploaded_resumes")
-        os.makedirs(temp_resume_dir, exist_ok=True)
+        final_df = rank_resumes(job_description, uploaded_files)
 
-        resume_file_paths = []
-
-        for uploaded_file in uploaded_files:
-            save_path = os.path.join(temp_resume_dir, uploaded_file.name)
-            with open(save_path, "wb") as f:
-                f.write(uploaded_file.getbuffer())
-            resume_file_paths.append(save_path)
-
-        # ---------------------------------------------------
-        # Process resumes
-        # ---------------------------------------------------
-        processed_df = process_multiple_resumes(job_description, resume_file_paths)
-
-        if processed_df.empty:
+        if final_df.empty:
             st.error("No resumes could be processed.")
             st.stop()
 
-        # ---------------------------------------------------
-        # Rank candidates
-        # ---------------------------------------------------
-        final_df = rank_candidates(processed_df)
+        # helper.py gives this column name
+        if "resume_jd_similarity_percentage" in final_df.columns:
+            final_df["resume_jd_similarity"] = final_df["resume_jd_similarity_percentage"]
 
         # ---------------------------------------------------
-        # Save CSV / charts / reports
+        # Save outputs
         # ---------------------------------------------------
-        save_results(processed_df, final_df, output_dir=OUTPUT_DIR)
+        final_csv_path = os.path.join(OUTPUT_DIR, "final_candidate_ranking.csv")
+        final_df.to_csv(final_csv_path, index=False)
+
+        top_3 = final_df.head(3)[["rank", "candidate_name", "final_score", "recommendation"]]
+        top_3.to_csv(os.path.join(OUTPUT_DIR, "top_3_candidates.csv"), index=False)
+
+        # ---------------------------------------------------
+        # Success message
+        # ---------------------------------------------------
+        st.success("Resume analysis completed successfully!")
 
         # ---------------------------------------------------
         # Quick Summary
         # ---------------------------------------------------
-        st.success("Resume analysis completed successfully!")
-
         st.markdown("## 📌 Quick Summary")
         col1, col2, col3 = st.columns(3)
 
@@ -154,33 +143,30 @@ if st.button("🚀 Analyze Resumes"):
         st.markdown("## 🏆 Final Candidate Ranking")
         st.dataframe(final_df, use_container_width=True)
 
-        final_csv_path = os.path.join(OUTPUT_DIR, "final_candidate_ranking.csv")
-        if os.path.exists(final_csv_path):
-            with open(final_csv_path, "rb") as f:
-                st.download_button(
-                    "⬇️ Download Full Ranking Report (CSV)",
-                    f,
-                    file_name="final_candidate_ranking.csv",
-                    mime="text/csv"
-                )
+        with open(final_csv_path, "rb") as f:
+            st.download_button(
+                "⬇️ Download Full Ranking Report (CSV)",
+                f,
+                file_name="final_candidate_ranking.csv",
+                mime="text/csv"
+            )
 
         st.markdown("---")
 
         # ---------------------------------------------------
-        # Top 3 Candidates
+        # Top 3 Shortlisted Candidates
         # ---------------------------------------------------
         st.markdown("## ⭐ Top 3 Shortlisted Candidates")
-        top_3 = final_df.head(3)[["rank", "candidate_name", "final_score", "recommendation"]]
         st.dataframe(top_3, use_container_width=True)
 
         st.markdown("---")
 
         # ---------------------------------------------------
-        # Charts Section
+        # Candidate Performance Charts
         # ---------------------------------------------------
         st.markdown("## 📊 Candidate Performance Charts")
 
-        # 1. Final Score Chart
+        # Chart 1: Final Score
         fig1, ax1 = plt.subplots(figsize=(8, 4))
         ax1.bar(final_df["candidate_name"], final_df["final_score"])
         ax1.set_title("Final Candidate Scores")
@@ -188,8 +174,9 @@ if st.button("🚀 Analyze Resumes"):
         ax1.set_ylabel("Final Score")
         plt.xticks(rotation=45)
         st.pyplot(fig1)
+        fig1.savefig(os.path.join(OUTPUT_DIR, "final_score_chart.png"), bbox_inches="tight")
 
-        # 2. Skill Match Chart
+        # Chart 2: Skill Match Percentage
         fig2, ax2 = plt.subplots(figsize=(8, 4))
         ax2.bar(final_df["candidate_name"], final_df["skill_match_percentage"])
         ax2.set_title("Skill Match Percentage")
@@ -197,8 +184,9 @@ if st.button("🚀 Analyze Resumes"):
         ax2.set_ylabel("Skill Match %")
         plt.xticks(rotation=45)
         st.pyplot(fig2)
+        fig2.savefig(os.path.join(OUTPUT_DIR, "skill_match_chart.png"), bbox_inches="tight")
 
-        # 3. Resume Similarity Chart
+        # Chart 3: Resume-JD Similarity
         fig3, ax3 = plt.subplots(figsize=(8, 4))
         ax3.bar(final_df["candidate_name"], final_df["resume_jd_similarity"])
         ax3.set_title("Resume-JD Similarity")
@@ -206,6 +194,7 @@ if st.button("🚀 Analyze Resumes"):
         ax3.set_ylabel("Similarity %")
         plt.xticks(rotation=45)
         st.pyplot(fig3)
+        fig3.savefig(os.path.join(OUTPUT_DIR, "similarity_chart.png"), bbox_inches="tight")
 
         st.markdown("---")
 
@@ -221,8 +210,13 @@ if st.button("🚀 Analyze Resumes"):
             ):
                 st.write(f"**Skill Match Percentage:** {row['skill_match_percentage']:.2f}%")
                 st.write(f"**Resume-JD Similarity:** {row['resume_jd_similarity']:.2f}%")
-                st.write(f"**Matched Skills:** {row['matched_skills']}")
-                st.write(f"**Missing Skills:** {row['missing_skills']}")
+                st.write(
+                    f"**Matched Skills:** {', '.join(row['matched_skills']) if isinstance(row['matched_skills'], list) else row['matched_skills']}"
+                )
+                st.write(
+                    f"**Missing Skills:** {', '.join(row['missing_skills']) if isinstance(row['missing_skills'], list) else row['missing_skills']}"
+                )
+                st.write(f"**Candidate Summary:** {row['candidate_summary']}")
                 st.write(f"**Recruiter Note:** {row['recruiter_note']}")
 
         st.markdown("---")
