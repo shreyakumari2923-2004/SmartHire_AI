@@ -40,7 +40,7 @@ SmartHire AI is an NLP-powered **resume screening and candidate ranking system**
 
 # 📂 Project Structure
 
-
+```bash
 SmartHire_AI/
 │
 ├── data/
@@ -52,30 +52,43 @@ SmartHire_AI/
 │       ├── resume_4.txt
 │       └── resume_5.txt
 │
+├── images/
+│   ├── home1.png
+│   ├── home2.png
+│   ├── home3.png
+│   ├── ranking.png
+│   ├── chart1.png
+│   ├── chart2.png
+│   ├── chart3.png
+│   ├── shortlist.png
+│   ├── analysis1.png
+│   ├── analysis2.png
+│   └── detailedanalysis.png
+│
 ├── notebooks/
 │
-├── images/
+├── outputs/
+│   ├── app.py
+│   ├── helper.py
+│   ├── requirements.txt
+│   ├── README.md
+│   ├── .gitignore
+│   ├── raw_resume_data.csv
+│   ├── processed_resume_data.csv
+│   ├── resume_skill_analysis.csv
+│   ├── resume_similarity_analysis.csv
+│   ├── final_candidate_ranking.csv
+│   ├── final_candidate_ranking_with_tags.csv
+│   ├── smarthire_final_report.csv
+│   ├── top_3_candidates.csv
+│   ├── final_score_chart.png
+│   ├── skill_match_chart.png
+│   ├── similarity_chart.png
+│   └── top_3_candidates_chart.png
 │
-└── outputs/
-    ├── app.py
-    ├── helper.py
-    ├── requirements.txt
-    ├── README.md
-    ├── .gitignore
-    │
-    ├── raw_resume_data.csv
-    ├── processed_resume_data.csv
-    ├── resume_skill_analysis.csv
-    ├── resume_similarity_analysis.csv
-    ├── final_candidate_ranking.csv
-    ├── final_candidate_ranking_with_tags.csv
-    ├── smarthire_final_report.csv
-    ├── top_3_candidates.csv
-    ├── final_score_chart.png
-    ├── skill_match_chart.png
-    ├── similarity_chart.png
-    └── top_3_candidates_chart.png
-   
+├── README.md
+└── requirements.txt
+```
 # 📸 App Screenshots
 
 ## 1. Home Page
@@ -104,5 +117,3 @@ SmartHire_AI/
 
 ## 5. Candidate Detailed Analysis
 ![Detailed Candidate Analysis](./images/detailedanalysis.png)
-
-
