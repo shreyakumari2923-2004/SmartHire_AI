@@ -40,7 +40,7 @@ SmartHire AI is an NLP-powered **resume screening and candidate ranking system**
 
 # 📂 Project Structure
 
-```bash
+
 SmartHire_AI/
 │
 ├── data/
@@ -75,7 +75,7 @@ SmartHire_AI/
     ├── skill_match_chart.png
     ├── similarity_chart.png
     └── top_3_candidates_chart.png
-    # 📸 App Screenshots
+   
 # 📸 App Screenshots
 
 ## 1. Home Page
