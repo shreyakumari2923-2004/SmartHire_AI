@@ -10,8 +10,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 # -----------------------------
 # NLTK setup
 # -----------------------------
-nltk.download("punkt")
-nltk.download("stopwords")
+nltk.download("punkt", quiet=True)
+nltk.download("punkt_tab", quiet=True)
+nltk.download("stopwords", quiet=True)
 
 stop_words = set(stopwords.words("english"))
 ps = PorterStemmer()
