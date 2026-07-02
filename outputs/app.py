@@ -3,12 +3,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from helper import (
-    load_job_description,
-    process_multiple_resumes,
-    rank_candidates,
-    save_results
-)
+from helper import rank_resumes
 
 # ---------------------------------------------------
 # Page Config
