@@ -1,0 +1,17 @@
+
+Sneha Kapoor
+Email: sneha@example.com
+Phone: 9090909090
+
+Education:
+B.Tech in Electronics and Communication
+
+Skills:
+Python, Excel, Communication, Problem Solving, Data Analysis, Power BI
+
+Projects:
+- Analyzed college survey data using Excel and Python
+- Built a simple recommendation system project
+
+Experience:
+- No formal internship experience

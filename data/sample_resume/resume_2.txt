@@ -1,0 +1,17 @@
+
+Priya Verma
+Email: priya@example.com
+Phone: 9123456780
+
+Education:
+B.Tech in Information Technology
+
+Skills:
+Java, C++, HTML, CSS, JavaScript, MySQL, Problem Solving, Communication
+
+Projects:
+- Built a student management system in Java
+- Developed a portfolio website using HTML, CSS and JavaScript
+
+Experience:
+- Web Development Intern

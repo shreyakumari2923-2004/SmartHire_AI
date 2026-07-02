@@ -1,0 +1,19 @@
+
+Kunal Singh
+Email: kunal@example.com
+Phone: 9871234567
+
+Education:
+B.Tech in Computer Engineering
+
+Skills:
+Python, SQL, Excel, Tableau, Pandas, NumPy, Matplotlib, Scikit-learn, Machine Learning, Statistics, Data Visualization, Communication, Problem Solving, GitHub
+
+Projects:
+- Spam email classifier using NLP
+- Employee salary prediction model
+- Interactive dashboard for e-commerce data
+
+Experience:
+- Machine Learning Intern
+- Data Analyst Intern

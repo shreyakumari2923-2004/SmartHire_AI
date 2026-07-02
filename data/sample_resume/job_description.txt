@@ -1,0 +1,16 @@
+
+We are looking for a Data Analyst / Machine Learning Intern with strong skills in Python, SQL, Excel, Tableau, data analysis, data visualization, machine learning, statistics, communication, and problem solving.
+
+Responsibilities:
+- Analyze business and operational data
+- Build dashboards and reports
+- Clean and preprocess datasets
+- Perform exploratory data analysis
+- Develop machine learning models for prediction tasks
+- Work with cross-functional teams to present insights
+
+Required Skills:
+Python, SQL, Excel, Tableau, Pandas, NumPy, Matplotlib, Scikit-learn, Machine Learning, Data Analysis, Data Visualization, Statistics, Communication, Problem Solving
+
+Preferred:
+Internship experience, projects in machine learning or data analytics, GitHub projects, dashboard building, Power BI

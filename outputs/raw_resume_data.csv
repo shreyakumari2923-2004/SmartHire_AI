@@ -1,0 +1,189 @@
+candidate_name,file_name,resume_text,resume_length
+resume_5,resume_5.txt,"
+Kunal Singh
+Email: kunal@example.com
+Phone: 9871234567
+
+Education:
+B.Tech in Computer Engineering
+
+Skills:
+Python, SQL, Excel, Tableau, Pandas, NumPy, Matplotlib, Scikit-learn, Machine Learning, Statistics, Data Visualization, Communication, Problem Solving, GitHub
+
+Projects:
+- Spam email classifier using NLP
+- Employee salary prediction model
+- Interactive dashboard for e-commerce data
+
+Experience:
+- Machine Learning Intern
+- Data Analyst Intern
+",452
+resume_2,resume_2.txt,"
+Priya Verma
+Email: priya@example.com
+Phone: 9123456780
+
+Education:
+B.Tech in Information Technology
+
+Skills:
+Java, C++, HTML, CSS, JavaScript, MySQL, Problem Solving, Communication
+
+Projects:
+- Built a student management system in Java
+- Developed a portfolio website using HTML, CSS and JavaScript
+
+Experience:
+- Web Development Intern
+",338
+resume_4,resume_4.txt,"
+Sneha Kapoor
+Email: sneha@example.com
+Phone: 9090909090
+
+Education:
+B.Tech in Electronics and Communication
+
+Skills:
+Python, Excel, Communication, Problem Solving, Data Analysis, Power BI
+
+Projects:
+- Analyzed college survey data using Excel and Python
+- Built a simple recommendation system project
+
+Experience:
+- No formal internship experience
+",348
+resume_1,resume_1.txt,"
+Aarav Sharma
+Email: aarav@example.com
+Phone: 9876543210
+
+Education:
+B.Tech in Computer Science
+
+Skills:
+Python, SQL, Excel, Pandas, NumPy, Matplotlib, Scikit-learn, Machine Learning, Data Analysis, Communication
+
+Projects:
+- Built a house price prediction model using machine learning
+- Performed data cleaning and exploratory data analysis on sales data
+- Created visualizations using Matplotlib and Seaborn
+
+Experience:
+- Data Analytics Intern at XYZ Company
+",462
+resume_3,resume_3.txt,"
+Rohan Mehta
+Email: rohan@example.com
+Phone: 9988776655
+
+Education:
+B.Tech in Data Science
+
+Skills:
+Python, SQL, Tableau, Power BI, Excel, Pandas, NumPy, Statistics, Data Visualization, Machine Learning, Deep Learning
+
+Projects:
+- Built a customer churn prediction model
+- Designed Tableau dashboards for sales analysis
+- Performed sentiment analysis on customer reviews
+
+Experience:
+- Business Analyst Intern
+",410
+resume_5,resume_5.txt,"
+Kunal Singh
+Email: kunal@example.com
+Phone: 9871234567
+
+Education:
+B.Tech in Computer Engineering
+
+Skills:
+Python, SQL, Excel, Tableau, Pandas, NumPy, Matplotlib, Scikit-learn, Machine Learning, Statistics, Data Visualization, Communication, Problem Solving, GitHub
+
+Projects:
+- Spam email classifier using NLP
+- Employee salary prediction model
+- Interactive dashboard for e-commerce data
+
+Experience:
+- Machine Learning Intern
+- Data Analyst Intern
+",452
+resume_2,resume_2.txt,"
+Priya Verma
+Email: priya@example.com
+Phone: 9123456780
+
+Education:
+B.Tech in Information Technology
+
+Skills:
+Java, C++, HTML, CSS, JavaScript, MySQL, Problem Solving, Communication
+
+Projects:
+- Built a student management system in Java
+- Developed a portfolio website using HTML, CSS and JavaScript
+
+Experience:
+- Web Development Intern
+",338
+resume_4,resume_4.txt,"
+Sneha Kapoor
+Email: sneha@example.com
+Phone: 9090909090
+
+Education:
+B.Tech in Electronics and Communication
+
+Skills:
+Python, Excel, Communication, Problem Solving, Data Analysis, Power BI
+
+Projects:
+- Analyzed college survey data using Excel and Python
+- Built a simple recommendation system project
+
+Experience:
+- No formal internship experience
+",348
+resume_1,resume_1.txt,"
+Aarav Sharma
+Email: aarav@example.com
+Phone: 9876543210
+
+Education:
+B.Tech in Computer Science
+
+Skills:
+Python, SQL, Excel, Pandas, NumPy, Matplotlib, Scikit-learn, Machine Learning, Data Analysis, Communication
+
+Projects:
+- Built a house price prediction model using machine learning
+- Performed data cleaning and exploratory data analysis on sales data
+- Created visualizations using Matplotlib and Seaborn
+
+Experience:
+- Data Analytics Intern at XYZ Company
+",462
+resume_3,resume_3.txt,"
+Rohan Mehta
+Email: rohan@example.com
+Phone: 9988776655
+
+Education:
+B.Tech in Data Science
+
+Skills:
+Python, SQL, Tableau, Power BI, Excel, Pandas, NumPy, Statistics, Data Visualization, Machine Learning, Deep Learning
+
+Projects:
+- Built a customer churn prediction model
+- Designed Tableau dashboards for sales analysis
+- Performed sentiment analysis on customer reviews
+
+Experience:
+- Business Analyst Intern
+",410

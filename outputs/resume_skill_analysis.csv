@@ -1,0 +1,189 @@
+candidate_name,file_name,resume_text,resume_length,cleaned_resume_text,cleaned_resume_length,resume_skills,matched_skills,missing_skills,skill_match_count,skill_match_percentage
+resume_5,resume_5.txt,"
+Kunal Singh
+Email: kunal@example.com
+Phone: 9871234567
+
+Education:
+B.Tech in Computer Engineering
+
+Skills:
+Python, SQL, Excel, Tableau, Pandas, NumPy, Matplotlib, Scikit-learn, Machine Learning, Statistics, Data Visualization, Communication, Problem Solving, GitHub
+
+Projects:
+- Spam email classifier using NLP
+- Employee salary prediction model
+- Interactive dashboard for e-commerce data
+
+Experience:
+- Machine Learning Intern
+- Data Analyst Intern
+",452,kunal singh email kunal exampl com phone 9871234567 educ b tech comput engin skill python sql excel tableau panda numpi matplotlib scikit learn machin learn statist data visual commun problem solv github project spam email classifi use nlp employe salari predict model interact dashboard e commerc data experi machin learn intern data analyst intern,349,"['data visualization', 'sql', 'python', 'problem solving', 'machine learning', 'numpy', 'github', 'pandas', 'scikit-learn', 'excel', 'statistics', 'matplotlib', 'tableau', 'communication']","['data visualization', 'sql', 'python', 'problem solving', 'machine learning', 'numpy', 'github', 'pandas', 'scikit-learn', 'excel', 'statistics', 'matplotlib', 'tableau', 'communication']","['data analysis', 'power bi']",14,87.5
+resume_2,resume_2.txt,"
+Priya Verma
+Email: priya@example.com
+Phone: 9123456780
+
+Education:
+B.Tech in Information Technology
+
+Skills:
+Java, C++, HTML, CSS, JavaScript, MySQL, Problem Solving, Communication
+
+Projects:
+- Built a student management system in Java
+- Developed a portfolio website using HTML, CSS and JavaScript
+
+Experience:
+- Web Development Intern
+",338,priya verma email priya exampl com phone 9123456780 educ b tech inform technolog skill java c html css javascript mysql problem solv commun project built student manag system java develop portfolio websit use html css javascript experi web develop intern,254,"['sql', 'c++', 'css', 'problem solving', 'html', 'java', 'javascript', 'mysql', 'communication']","['sql', 'problem solving', 'communication']","['data visualization', 'python', 'machine learning', 'numpy', 'github', 'pandas', 'scikit-learn', 'excel', 'data analysis', 'statistics', 'matplotlib', 'tableau', 'power bi']",3,18.75
+resume_4,resume_4.txt,"
+Sneha Kapoor
+Email: sneha@example.com
+Phone: 9090909090
+
+Education:
+B.Tech in Electronics and Communication
+
+Skills:
+Python, Excel, Communication, Problem Solving, Data Analysis, Power BI
+
+Projects:
+- Analyzed college survey data using Excel and Python
+- Built a simple recommendation system project
+
+Experience:
+- No formal internship experience
+",348,sneha kapoor email sneha exampl com phone 9090909090 educ b tech electron commun skill python excel commun problem solv data analysi power bi project analyz colleg survey data use excel python built simpl recommend system project experi formal internship experi,261,"['python', 'problem solving', 'excel', 'data analysis', 'power bi', 'communication']","['python', 'problem solving', 'excel', 'data analysis', 'power bi', 'communication']","['data visualization', 'sql', 'machine learning', 'numpy', 'github', 'pandas', 'scikit-learn', 'statistics', 'matplotlib', 'tableau']",6,37.5
+resume_1,resume_1.txt,"
+Aarav Sharma
+Email: aarav@example.com
+Phone: 9876543210
+
+Education:
+B.Tech in Computer Science
+
+Skills:
+Python, SQL, Excel, Pandas, NumPy, Matplotlib, Scikit-learn, Machine Learning, Data Analysis, Communication
+
+Projects:
+- Built a house price prediction model using machine learning
+- Performed data cleaning and exploratory data analysis on sales data
+- Created visualizations using Matplotlib and Seaborn
+
+Experience:
+- Data Analytics Intern at XYZ Company
+",462,aarav sharma email aarav exampl com phone 9876543210 educ b tech comput scienc skill python sql excel panda numpi matplotlib scikit learn machin learn data analysi commun project built hous price predict model use machin learn perform data clean exploratori data analysi sale data creat visual use matplotlib seaborn experi data analyt intern xyz compani,354,"['sql', 'python', 'machine learning', 'numpy', 'pandas', 'scikit-learn', 'excel', 'data analysis', 'matplotlib', 'communication']","['sql', 'python', 'machine learning', 'numpy', 'pandas', 'scikit-learn', 'excel', 'data analysis', 'matplotlib', 'communication']","['data visualization', 'problem solving', 'tableau', 'statistics', 'github', 'power bi']",10,62.5
+resume_3,resume_3.txt,"
+Rohan Mehta
+Email: rohan@example.com
+Phone: 9988776655
+
+Education:
+B.Tech in Data Science
+
+Skills:
+Python, SQL, Tableau, Power BI, Excel, Pandas, NumPy, Statistics, Data Visualization, Machine Learning, Deep Learning
+
+Projects:
+- Built a customer churn prediction model
+- Designed Tableau dashboards for sales analysis
+- Performed sentiment analysis on customer reviews
+
+Experience:
+- Business Analyst Intern
+",410,rohan mehta email rohan exampl com phone 9988776655 educ b tech data scienc skill python sql tableau power bi excel panda numpi statist data visual machin learn deep learn project built custom churn predict model design tableau dashboard sale analysi perform sentiment analysi custom review experi busi analyst intern,317,"['data visualization', 'deep learning', 'sql', 'python', 'machine learning', 'numpy', 'pandas', 'excel', 'statistics', 'tableau', 'power bi']","['data visualization', 'sql', 'python', 'machine learning', 'numpy', 'pandas', 'excel', 'statistics', 'tableau', 'power bi']","['problem solving', 'scikit-learn', 'data analysis', 'matplotlib', 'github', 'communication']",10,62.5
+resume_5,resume_5.txt,"
+Kunal Singh
+Email: kunal@example.com
+Phone: 9871234567
+
+Education:
+B.Tech in Computer Engineering
+
+Skills:
+Python, SQL, Excel, Tableau, Pandas, NumPy, Matplotlib, Scikit-learn, Machine Learning, Statistics, Data Visualization, Communication, Problem Solving, GitHub
+
+Projects:
+- Spam email classifier using NLP
+- Employee salary prediction model
+- Interactive dashboard for e-commerce data
+
+Experience:
+- Machine Learning Intern
+- Data Analyst Intern
+",452,kunal singh email kunal exampl com phone 9871234567 educ b tech comput engin skill python sql excel tableau panda numpi matplotlib scikit learn machin learn statist data visual commun problem solv github project spam email classifi use nlp employe salari predict model interact dashboard e commerc data experi machin learn intern data analyst intern,349,"['data visualization', 'sql', 'python', 'problem solving', 'machine learning', 'numpy', 'github', 'pandas', 'scikit-learn', 'excel', 'statistics', 'matplotlib', 'tableau', 'communication']","['data visualization', 'sql', 'python', 'problem solving', 'machine learning', 'numpy', 'github', 'pandas', 'scikit-learn', 'excel', 'statistics', 'matplotlib', 'tableau', 'communication']","['data analysis', 'power bi']",14,87.5
+resume_2,resume_2.txt,"
+Priya Verma
+Email: priya@example.com
+Phone: 9123456780
+
+Education:
+B.Tech in Information Technology
+
+Skills:
+Java, C++, HTML, CSS, JavaScript, MySQL, Problem Solving, Communication
+
+Projects:
+- Built a student management system in Java
+- Developed a portfolio website using HTML, CSS and JavaScript
+
+Experience:
+- Web Development Intern
+",338,priya verma email priya exampl com phone 9123456780 educ b tech inform technolog skill java c html css javascript mysql problem solv commun project built student manag system java develop portfolio websit use html css javascript experi web develop intern,254,"['sql', 'c++', 'css', 'problem solving', 'html', 'java', 'javascript', 'mysql', 'communication']","['sql', 'problem solving', 'communication']","['data visualization', 'python', 'machine learning', 'numpy', 'github', 'pandas', 'scikit-learn', 'excel', 'data analysis', 'statistics', 'matplotlib', 'tableau', 'power bi']",3,18.75
+resume_4,resume_4.txt,"
+Sneha Kapoor
+Email: sneha@example.com
+Phone: 9090909090
+
+Education:
+B.Tech in Electronics and Communication
+
+Skills:
+Python, Excel, Communication, Problem Solving, Data Analysis, Power BI
+
+Projects:
+- Analyzed college survey data using Excel and Python
+- Built a simple recommendation system project
+
+Experience:
+- No formal internship experience
+",348,sneha kapoor email sneha exampl com phone 9090909090 educ b tech electron commun skill python excel commun problem solv data analysi power bi project analyz colleg survey data use excel python built simpl recommend system project experi formal internship experi,261,"['python', 'problem solving', 'excel', 'data analysis', 'power bi', 'communication']","['python', 'problem solving', 'excel', 'data analysis', 'power bi', 'communication']","['data visualization', 'sql', 'machine learning', 'numpy', 'github', 'pandas', 'scikit-learn', 'statistics', 'matplotlib', 'tableau']",6,37.5
+resume_1,resume_1.txt,"
+Aarav Sharma
+Email: aarav@example.com
+Phone: 9876543210
+
+Education:
+B.Tech in Computer Science
+
+Skills:
+Python, SQL, Excel, Pandas, NumPy, Matplotlib, Scikit-learn, Machine Learning, Data Analysis, Communication
+
+Projects:
+- Built a house price prediction model using machine learning
+- Performed data cleaning and exploratory data analysis on sales data
+- Created visualizations using Matplotlib and Seaborn
+
+Experience:
+- Data Analytics Intern at XYZ Company
+",462,aarav sharma email aarav exampl com phone 9876543210 educ b tech comput scienc skill python sql excel panda numpi matplotlib scikit learn machin learn data analysi commun project built hous price predict model use machin learn perform data clean exploratori data analysi sale data creat visual use matplotlib seaborn experi data analyt intern xyz compani,354,"['sql', 'python', 'machine learning', 'numpy', 'pandas', 'scikit-learn', 'excel', 'data analysis', 'matplotlib', 'communication']","['sql', 'python', 'machine learning', 'numpy', 'pandas', 'scikit-learn', 'excel', 'data analysis', 'matplotlib', 'communication']","['data visualization', 'problem solving', 'tableau', 'statistics', 'github', 'power bi']",10,62.5
+resume_3,resume_3.txt,"
+Rohan Mehta
+Email: rohan@example.com
+Phone: 9988776655
+
+Education:
+B.Tech in Data Science
+
+Skills:
+Python, SQL, Tableau, Power BI, Excel, Pandas, NumPy, Statistics, Data Visualization, Machine Learning, Deep Learning
+
+Projects:
+- Built a customer churn prediction model
+- Designed Tableau dashboards for sales analysis
+- Performed sentiment analysis on customer reviews
+
+Experience:
+- Business Analyst Intern
+",410,rohan mehta email rohan exampl com phone 9988776655 educ b tech data scienc skill python sql tableau power bi excel panda numpi statist data visual machin learn deep learn project built custom churn predict model design tableau dashboard sale analysi perform sentiment analysi custom review experi busi analyst intern,317,"['data visualization', 'deep learning', 'sql', 'python', 'machine learning', 'numpy', 'pandas', 'excel', 'statistics', 'tableau', 'power bi']","['data visualization', 'sql', 'python', 'machine learning', 'numpy', 'pandas', 'excel', 'statistics', 'tableau', 'power bi']","['problem solving', 'scikit-learn', 'data analysis', 'matplotlib', 'github', 'communication']",10,62.5

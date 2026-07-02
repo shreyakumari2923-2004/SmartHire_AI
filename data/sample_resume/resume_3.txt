@@ -1,0 +1,18 @@
+
+Rohan Mehta
+Email: rohan@example.com
+Phone: 9988776655
+
+Education:
+B.Tech in Data Science
+
+Skills:
+Python, SQL, Tableau, Power BI, Excel, Pandas, NumPy, Statistics, Data Visualization, Machine Learning, Deep Learning
+
+Projects:
+- Built a customer churn prediction model
+- Designed Tableau dashboards for sales analysis
+- Performed sentiment analysis on customer reviews
+
+Experience:
+- Business Analyst Intern

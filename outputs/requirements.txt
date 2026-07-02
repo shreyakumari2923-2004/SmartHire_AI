@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+scikit-learn
+nltk
+matplotlib
+PyPDF2
+python-docx
